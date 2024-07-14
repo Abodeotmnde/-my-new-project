@@ -1,0 +1,636 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --one-color: #19c8fa;
+    --tow-color: rgb(15 116 143 / 70%);
+    --three-color: ;
+}
+html {
+    
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    list-style: none;
+}
+.contenar {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .contenar {
+        width: 750px;
+    }
+}
+@media (min-width: 992p) {
+    .contenar {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .contenar {
+        width: 1170px;
+    }
+}
+/* stat header */
+.header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    top: -8px;
+}
+.header .contenar {
+    position: relative;
+}
+.header .contenar .head {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+}
+.header .contenar .head::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: #a2a2a2;
+    bottom: 0;
+    left: 15px;
+
+}
+.header .contenar .head a img {
+    
+}
+.header .contenar .head nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;     
+
+}
+.header .contenar .head nav ul {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    width: 450px;
+    justify-content: flex-end;
+}
+.header .contenar .head nav ul li {
+    list-style: none;
+    padding: 40px 10px;
+}
+.header .contenar .head nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.header .contenar .head nav ul li a.check,
+.header .contenar .head nav ul li a:hover{
+    position: absolute;
+    content: "";
+    color: var(--tow-color);
+    border-bottom: 1px solid var(--tow-color);
+}
+
+.header .contenar .head nav ul .iser {
+    position: relative;
+}
+
+.header .contenar .head nav ul .iser i {
+    color: #ffffff;
+}
+.header .contenar .head nav ul .iser i::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 23px;
+    left: -10px;
+    top: 0;
+    border-left: 2px solid;
+}
+/* end header */
+/* start landing */
+.landing {
+    display: flex;
+    font-size: 25px;
+    height: 540px;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../images/landing.jpg);
+    position: relative;
+    background-size: cover;
+    min-height: 100vh;
+}
+.landing .contenar {
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+.landing .contenar .text {
+    width: 50%;
+    height: 420px;
+    color: #ffffff;
+    background-color: var(--tow-color);
+    padding: 30px;
+    line-height: 1.5;
+
+}
+.landing .contenar h2 {
+    margin: 0;
+
+}
+.landing .contenar p {
+    font-size: 18px;
+
+}
+.landing .contenar {
+}
+.landing i:first-of-type {
+    color: #ffffff;
+    position: absolute;
+    right: -200px;
+    bottom: 50%;
+    font-size: 25px;
+}
+.landing i:last-of-type {
+    color: #ffffff;
+    position: absolute;
+    left: 16px;
+    bottom: 50%;
+    font-size: 25px;
+}
+.landing .do {
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+    top: -3;
+    left: 0;
+}
+.put {
+    display: flex;
+    justify-content: center;
+    width: 130%;
+}
+.put li {
+    width: 20px;
+    height: 20px;
+    border: 1px white solid;
+    border-radius: 50%;
+    list-style: none;
+    margin: 5px;
+}
+.put .action {
+    background-color: var(--one-color);
+    border: 1px var(--one-color) solid;
+} 
+/* end landing */
+/* start srvices */
+.srvices {
+
+}
+.srvices .contenar {
+    padding-bottom: 100px;
+    
+}
+.srvices .contenar .hp {
+    padding-left: 30%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+.srvices .contenar .hp h2 {
+   font-size: 70px;
+    margin-bottom: 100px;
+    position: relative;
+    padding-left: 100px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
+}
+.srvices .hp h2::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -45px;
+    right: 70%;
+    background-color: #ffffff;
+}
+.srvices .hp h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    left: 17%;
+    bottom: -35px;
+    background-color: black;
+    z-index: -1;
+
+}
+.srvices .contenar .hp .span {
+    border: 2px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}
+.srvices .contenar .hp p{
+    width: 530px;
+    text-align: center;
+    color: #777;
+    
+}
+.dodo {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-rows: auto;
+    gap: 60px;
+
+
+}
+.dodo .this {
+    display: flex;
+    line-height: 1.8;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.dodo .this i {
+
+}
+.dodo .this h3 {
+    color: var(--one-color);
+    padding-bottom: 20px;
+
+}
+.dodo .this p {
+    color: #777;
+
+}
+@media (min-width: 1200px) {
+   .dodo {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-rows: auto;
+    gap: 60px;
+   }
+}
+
+
+/* end srvices */
+/* start dsing */
+.dsing {
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+    
+}
+.dsing .do {
+    background-color: var(--tow-color);
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 25%;
+    width: 55%;
+    height: 50%;
+    line-height: 3;
+    padding: 35px;
+    padding-left: 60px;
+
+}
+.dsing .do h2 {
+    margin-bottom: 15px;
+
+}
+.dsing .do li {
+    padding-left: 35px;
+}
+
+.dsing .do li::after {
+    content: "\f108";
+    position: absolute;
+    left: 60px;
+}
+
+.dsing .image {
+    left: 100px;
+    position: absolute;
+    bottom: -60px;
+
+}
+/* end dsing */
+/* start portfolio */
+.portfolio {
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+.portfolio .hp {
+    padding-left: 30%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.portfolio .hp h2 {
+   font-size: 70px;
+    margin-bottom: 100px;
+    position: relative;
+    padding-left: 65px;
+    text-transform: uppercase;
+        font-weight: normal;
+
+}
+.portfolio .hp h2::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -45px;
+    right: 70%;
+    background-color: #ffffff;
+
+}
+.portfolio .hp h2::after {
+  content: "";
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    left: 17%;
+    bottom: -35px;
+    background-color: black;
+    z-index: -1;
+
+
+}
+
+.portfolio .hp span {
+    border: 2px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+
+.portfolio .hp p {
+    width: 530px;
+    text-align: center;
+    color: #777;
+
+} 
+.portfolio .do {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+.portfolio .do div {
+    padding: 10px;
+
+}
+.portfolio .do .fst {
+    color: #ffffff;
+    background-color: var(--one-color)
+
+}
+.portfolio .images {
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+}
+.portfolio .images .box {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .portfolio .images .box {
+        flex-basis: 50%;
+    }
+
+     
+}
+@media (max-width: 767px) {
+    .portfolio .images {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (min-width: 1199px) {
+    .portfolio .images .box {
+        flex-basis: 25%;
+    }
+
+}
+
+
+.portfolio .images .box:hover .cap  {
+    bottom: 0;
+
+}
+.portfolio .images .box:hover {
+    transform: rotate(15deg);
+}
+
+
+.portfolio .images .box img {
+    max-width: 100%;
+
+}
+.portfolio .images .box .cap {
+    padding: 20px;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    
+}
+.portfolio .images .box .cap h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    
+}
+.portfolio .images .box .cap p {
+    color: var(--one-color);
+    
+}
+.portfolio a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 40px;
+    background-color: var(--one-color);
+    font-size: larger;
+
+}
+.portfolio .a {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.portfolio .vid {
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: var(--tow-color);
+    
+
+} 
+.portfolio .vid h2 {
+
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.portfolio .vid p {
+    margin-bottom: 30px;
+    color: #ffffff;
+
+} 
+.portfolio .vid button {
+
+}
+.portfolio .vid source {
+    width: 100%;
+}
+/* end portfolio */
+/* start abuot us */
+.abuot {
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+}
+.abuot .hp {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+.abuot .hp h2 {
+    font-size: 70px;
+    margin-bottom: 100px;
+    font-weight: normal;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.abuot .hp h2::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -45px;
+    right: 50%;
+    background-color: #ffffff;
+
+}
+.abuot .hp h2::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    left: 40%;
+    bottom: -35px;
+    background-color: black;
+    z-index: -1;
+
+
+}
+.abuot .hp p {
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+
+}
+.abuot .foto {
+
+}
+.abuot .foto .foto1 {
+    margin-bottom: -120px;
+    text-align: center;
+
+}
+.abuot .foto .foto2 {
+    position: relative;
+}
+
+.abuot .foto .foto2 img {
+    max-width: 100%;
+    
+
+}
+.abuot .foto .foto2 .div {
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    background-color: rgb(0 0 0 / 60%);
+
+}
+.abuot .foto .foto2 .cont {
+    padding-left: 60px;
+    padding-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;
+    background-color: var(--tow-color);
+    top: -500px;
+    position: relative;
+
+}
+.abuot .foto .foto2 .cont .box {
+    position: relative;
+    text-align: center;
+    display: flex;
+    color: #ffffff;
+    font-size: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.abuot .foto .foto2 .cont .box i {
+    flex: 1;
+    margin-bottom: 10px;
+    
+}
+.abuot .foto .foto2 .cont .box .number {
+    flex: 2;
+    margin-bottom: 10px;
+
+}
+.abuot .foto .foto2 .cont .box p {
+
+}
+
+
+
+
+
+
+/* end abuot us */
